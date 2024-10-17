@@ -1,0 +1,51 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 90%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #374151;
+}
+
+.form-group textarea {
+    height: 100px;
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: rgb(59, 130, 246);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 11pt;
+    cursor: pointer;
+    transition: background-color .2s, transform .2s;
+}
+
+button:hover {
+    background-color: rgb(89, 160, 276);
+    transform: scale(1.03);
+}
+
+button:active {
+    transform: scale(0.97);
+}

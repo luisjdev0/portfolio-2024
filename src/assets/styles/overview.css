@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
+.contact-buttons {
+    display: flex;
+    flex-direction: row;
+    font-size: 18pt;
+    margin-top: 10px;
+    width: 30%;
+    justify-content: space-evenly;
+    min-width: 200px;
+}
+
+.contact-buttons path {
+    color: rgb(81, 91, 106);
+    transition: color .2s;
+}
+
+.contact-buttons svg {
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.contact-buttons svg:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.contact-buttons svg:hover path {
+    color: rgb(59, 130, 246);
+}
+
+.console-box{
+    width: 80%;
+    border: dotted 2px #888c92;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.console-box p{
+    font-family: "IBM Plex Mono", monospace !important;
+    text-align: justify;
+    font-size: 12pt;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 25px;
+}

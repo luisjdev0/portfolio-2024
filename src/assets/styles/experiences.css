@@ -1,0 +1,38 @@
+.experience-box{
+    background-color: #242c3c;
+    width: 80%;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: transform .1s, background-color .2s;
+}
+.experience-box.hovereable:hover{
+    background-color: rgb(81, 91, 106);
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.experience-box .project-options{
+    font-size: 20pt;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    gap: 15px;
+}
+
+.project-options svg{
+    transition: transform .2s;
+}
+
+.project-options svg path{
+    transition: color .2s;
+}
+
+.experience-box:hover .project-options svg{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.project-options svg:hover path{
+    color: rgb(59, 130, 246);
+}
