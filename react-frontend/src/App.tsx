@@ -6,7 +6,6 @@ import ProjectsBoxComponent from "./components/ProjectsBoxComponent"
 import SkillBoxComponent from "./components/SkillsBoxComponent"
 
 function App() {
-
   return (
     <main style={{
       marginBottom: '50px'

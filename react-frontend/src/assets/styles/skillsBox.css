@@ -27,3 +27,9 @@
     gap: 10px;
     
 }
+
+@media screen and (max-width: 800px){
+    .skillsBox{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

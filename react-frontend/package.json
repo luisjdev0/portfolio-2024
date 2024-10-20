@@ -14,9 +14,13 @@
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
-    "luisjdev-2024": "file:",
+    "@strapi/blocks-react-renderer": "^1.0.1",
+    "axios": "^1.7.7",
+    "luisjdev-2024": "file:../react-frontend",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "sweetalert2": "^11.14.4",
+    "sweetalert2-react-content": "^5.0.7"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",

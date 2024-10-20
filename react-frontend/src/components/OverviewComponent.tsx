@@ -1,8 +1,26 @@
+import { useEffect, useState } from 'react';
 import './../assets/styles/overview.css'
 import SocialButtonsComponent from "./SocialButtonsComponent";
+import { BlocksContent, BlocksRenderer } from '@strapi/blocks-react-renderer';
+import { getStrapiContent, redirectUrl } from '../helpers';
 
 
 const OverviewComponent = () => {
+
+    const [ summary, setSummary ] = useState<BlocksContent | null>(null)
+    const [ cv, setCv ] = useState('')
+
+    useEffect(() => {
+        getStrapiContent('porfolio-overview?populate=*')
+           .then(response => {
+                setSummary(response.data.data.Summary)
+                setCv(`${import.meta.env.VITE_BACKEND_API}${response.data.data.Curriculum.url}`)
+            })
+           .catch(error => {
+                console.error(error);
+            });
+    }, [])
+
     return (
         <header className="box-content" id='overview'>
             <img
@@ -22,13 +40,11 @@ const OverviewComponent = () => {
             <SocialButtonsComponent />
             <section className="console-box">
                 <h3>Sobre mi</h3>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi fugit pariatur voluptatum velit repellendus, libero dicta. Officia odit voluptatibus sit eum, fugit quod similique hic quibusdam, praesentium accusantium non soluta.
-                </p>
+                {summary && <BlocksRenderer content={summary}/>}
                 <button style={{
                     marginTop: "25px",
                     width: "100%"
-                }}>Descargar CV</button>
+                }} onClick={() => redirectUrl(cv) }>Descargar CV</button>
             </section>
         </header>
     )

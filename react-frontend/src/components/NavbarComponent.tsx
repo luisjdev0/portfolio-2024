@@ -5,7 +5,7 @@ import { smoothScroll } from '../helpers'
 
 const NavbarComponent = () => {
 
-    const [ activeElement, setActive ] = useState('li-overview')
+    const [ activeElement, setActive ] = useState('overview')
 
     const navOptions = [
         { target: 'overview', text: 'Sobre mí' },
@@ -47,6 +47,7 @@ const NavbarComponent = () => {
                     return <li
                         className={`nav-item ${activeElement == e.target ? 'active' : ''}`}
                         id={`li-${e.target}`}
+                        key={`li-${e.target}`}
                         onClick={() => smoothScroll(e.target)}>{e.text}</li>
                 })
             }
