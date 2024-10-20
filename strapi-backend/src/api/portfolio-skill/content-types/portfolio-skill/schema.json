@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolio_skills",
+  "info": {
+    "singularName": "portfolio-skill",
+    "pluralName": "portfolio-skills",
+    "displayName": "Portfolio Skill"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "ImageUrl": {
+      "type": "string"
+    }
+  }
+}
