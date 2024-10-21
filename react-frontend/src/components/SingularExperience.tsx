@@ -24,7 +24,7 @@ const SingularExperience: React.FC<SingularExperienceProps> = ({
 }) => {
     return (
         <div className={`experience-box ${href ? 'hovereable' : ''}`} onClick={() => href ? redirectUrl(href) : ''}>
-            <span>{year}</span>
+            <span style={{display: "block", marginBottom: "5px"}}>{year}</span>
             <h3>{title}</h3>
             {children && <p>{children}</p>}
 
