@@ -12,8 +12,8 @@ function App() {
     }}>
       <NavbarComponent />
       <OverviewComponent />
-      <SkillBoxComponent/>
       <ExperienceBoxComponent/>
+      <SkillBoxComponent/>
       <ProjectsBoxComponent/>
       <ContactBoxComponent/>
     </main>

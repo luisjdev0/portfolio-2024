@@ -9,8 +9,8 @@ const NavbarComponent = () => {
 
     const navOptions = [
         { target: 'overview', text: 'Sobre mí' },
+        { target: 'educación-experiencia', text: 'Educación / Experiencia' }, 
         { target: 'tecnologías', text: 'Tecnologías' },
-        { target: 'educación-experiencia', text: 'Educación / Experiencia' },
         { target: 'proyectos', text: 'Proyectos' },
         //{ target: 'contacto', text: 'Contacto' }
 
